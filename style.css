@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/***** navbar ******/
+
+.navbar {
+    min-height: 10vh;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar button span {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.navbar img {
+    height: 30px;
+    position: absolute;
+    left: 70px;
+}
+
+.search_side {
+    position: absolute;
+    left: 35%;
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search_side .search_bar {
+    width: 600px;
+    background-color: black;
+    color: gray;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 3px solid gray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.search_side .search_bar:hover {
+    box-shadow: 0px 0px 6px rgb(255, 0, 0), 0px 0px 6px rgb(255, 0, 0);
+}
+
+.search_side .search_symbol {
+    height: 40px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    border: 3px solid gray;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.search_side .microhone {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    border: 3px solid gray;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+}
+
+.login {
+    position: absolute;
+    left: 93%;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login .notification {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    border: 3px solid gray;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+}
+
+.login .profile {
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("rudra2.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        position: fixed;
+        top: 0px;
+    }
+    .navbar img {
+        height: 30px;
+        position: absolute;
+        left: 20px;
+    }
+    .navbar button span {
+        display: none;
+    }
+    .search_side {
+        position: absolute;
+        left: 80%;
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    .search_side .search_bar {
+        display: none;
+    }
+    .search_side .search_symbol {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 50%;
+    }
+    .search_side .microhone {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        color: white;
+        border: 3px solid gray;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-left: 10px;
+    }
+    .login .notification {
+        display: none;
+    }
+    .login .profile {
+        display: none;
+    }
+}
+
+
+/* Menu Lists Bar Start */
+
+.interface {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    min-height: 100vh;
+    width: 300px;
+    background-color: black;
+    color: white;
+}
+
+.menu .menu_lists a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-left: 35px;
+}
+
+.menu .menu_lists a i {
+    margin-right: 22px;
+}
+
+.active {
+    background-color: gray;
+}
+
+.menu .menu_lists a:hover {
+    background-color: gray;
+}
+
+.nav-item h5 {
+    margin-left: 20px;
+}
+
+.nav-link .profile1 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("samar.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile2 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("apna.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile3 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("code.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile4 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("coding.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile5 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("more.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile6 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("kanak.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link .profile7 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-image: url("otv.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item p {
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+@media (max-width:700px) {
+    .menu {
+        display: none;
+    }
+    .interface .userpage .topic {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .interface .userpage .topic div {
+        height: 40px;
+        width: 65px;
+        font-size: 1rem;
+        border-radius: 7px;
+        text-align: center;
+    }
+    .interface .userpage .topic div:hover {
+        background-color: gray;
+    }
+    .interface .userpage {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .interface .userpage .youtube {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 25px 0px 0px 13px;
+    }
+    .interface .userpage .outer {
+        height: 250px;
+        width: 350px;
+        margin: 20px 0px 0px 20px;
+        display: grid;
+        place-content: center;
+    }
+    .interface .userpage .outer .upper {
+        height: 180px;
+        width: 350px;
+    }
+    .interface .userpage .youtube img {
+        height: 180px;
+        width: 350px;
+        border-radius: 15px;
+    }
+    .interface .userpage .outer .lower {
+        height: 60px;
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* Body Start */
+
+.interface .userpage .topic {
+    display: flex;
+    flex-direction: row;
+}
+
+.interface .userpage .topic div {
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.interface .userpage .topic div:hover {
+    background-color: gray;
+}
+
+
+/*Tags End*/
+
+.interface .userpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.interface .userpage .youtube {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interface .userpage .outer {
+    height: 250px;
+    width: 330px;
+    margin: 20px 0px 0px 20px;
+    display: grid;
+    place-content: center;
+}
+
+.interface .userpage .outer .upper {
+    height: 170px;
+    width: 330px;
+}
+
+.interface .userpage .youtube img {
+    height: 170px;
+    width: 330px;
+    border-radius: 15px;
+}
+
+.interface .userpage .outer .lower {
+    height: 60px;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+}
+
+.interface .userpage .youtube .lower .logo .profile1 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("coding.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile2 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("apna.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile3 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("otv.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile4 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("samar.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile5 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("kanak.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile6 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("code.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile7 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("code.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile8 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("coding.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile9 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("more.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile10 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("samar.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile11 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("otv.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .lower .logo .profile12 {
+    height: 60px;
+    width: 60px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-image: url("apna.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.interface .userpage .youtube .outer .lower .content h3 {
+    color: white;
+    font-size: 0.9rem;
+    padding: 0px 0px 0px 20px;
+}
+
+.interface .userpage .youtube .outer .lower .content h4 {
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 20px;
+}
+
+.interface .userpage .youtube .outer .lower .content h6 {
+    color: white;
+    font-size: 0.7rem;
+    padding-left: 20px;
+}
+
+.interface .userpage .youtube .outer .lower .dot i {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 80px;
+}
+
+@media (min-width:701px) {
+    .menu_bar {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .menu_bar {
+        min-height: 100px;
+        width: 400px;
+        background-color: black;
+        position: fixed;
+        top: 600px;
+    }
+    .menu_bar .menu_title {
+        height: 50px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menu_bar .menu_title a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .menu_bar .menu_icon {
+        height: 50px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    .menu_bar .menu_icon i {
+        color: white;
+        font-size: 1.7rem;
+    }
+}
